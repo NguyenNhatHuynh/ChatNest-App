@@ -1,4 +1,4 @@
-# Chat App with Flutter, NodeJs, Socket.io, Bloc - Clean Architecture 💬
+# ChatNest App 💬
 [![Flutter](https://img.shields.io/badge/Flutter-Framework-blue)](https://flutter.dev/) [![Node.js](https://img.shields.io/badge/Node.js-Backend-green)](https://nodejs.org/) [![Socket.io](https://img.shields.io/badge/Socket.io-Realtime-red)](https://socket.io/)
 
 Ứng dụng **"Chat App"** là một nền tảng trò chuyện thời gian thực, hỗ trợ chức năng đăng ký, đăng nhập, trò chuyện giữa các người dùng và tích hợp OpenAI cho bài quiz hàng ngày. Dự án này được phát triển với Clean Architecture và sử dụng Flutter cho phần ứng dụng di động, Node.js với PostgreSQL cho backend, và Socket.io cho kết nối thời gian thực.
@@ -83,8 +83,6 @@ Dự án này sử dụng Clean Architecture và Bloc để quản lý trạng t
 4. Khởi động server:
    ```bash
    npm start
-
-
 
 ## ✅ Todo
 ### Chức Năng Ứng Dụng
