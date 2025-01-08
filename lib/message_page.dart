@@ -1,3 +1,4 @@
+import 'package:chat_nest_app/core/theme.dart';
 import 'package:flutter/material.dart';
 
 class MessagePage extends StatelessWidget {
@@ -23,23 +24,76 @@ class MessagePage extends StatelessWidget {
         ],
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15.0),
+            child: Text(
+              'Recent',
+              style: Theme.of(context).textTheme.bodySmall,
+            ),
+          ),
           Container(
             height: 100,
             padding: EdgeInsets.all(5),
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
-                _buildRecentContact(context),
+                _buildRecentContact('Xoan Dev', context),
+                _buildRecentContact('Nhat Huynh', context),
+                _buildRecentContact('YTan', context),
+                _buildRecentContact('XDDEV', context),
+                _buildRecentContact('XN', context),
               ],
             ),
-          )
+          ),
+          SizedBox(height: 10),
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                color: DefaultColors.messageListPage,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(50),
+                  topRight: Radius.circular(50),
+                ),
+              ),
+              child: ListView(
+                children: [
+                  _buildMessageTitle('Xoan Dev', 'xoandev@gmail.com', '22:00'),
+                  _buildMessageTitle('Xoan Dev', 'xoandev@gmail.com', '22:00'),
+                  _buildMessageTitle('Xoan Dev', 'xoandev@gmail.com', '22:00'),
+                  _buildMessageTitle('Xoan Dev', 'xoandev@gmail.com', '22:00'),
+                  _buildMessageTitle('Xoan Dev', 'xoandev@gmail.com', '22:00'),
+                  _buildMessageTitle('Xoan Dev', 'xoandev@gmail.com', '22:00'),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
   }
 
-  Widget _buildRecentContact(BuildContext context) {
+  Widget _buildMessageTitle(String name, String message, String time) {
+    return ListTile(
+      contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      leading: CircleAvatar(
+        radius: 30,
+        backgroundImage: NetworkImage('https://via.placeholder.com/150'),
+      ),
+      subtitle: Text(
+        message,
+        style: TextStyle(color: Colors.grey),
+        overflow: TextOverflow.ellipsis,
+      ),
+      trailing: Text(
+        time,
+        style: TextStyle(color: Colors.grey),
+      ),
+    );
+  }
+
+  Widget _buildRecentContact(String name, BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Column(
@@ -50,7 +104,7 @@ class MessagePage extends StatelessWidget {
           ),
           SizedBox(height: 5),
           Text(
-            'Test',
+            name,
             style: Theme.of(context).textTheme.bodyMedium,
           )
         ],
