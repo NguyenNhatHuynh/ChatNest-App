@@ -1,3 +1,4 @@
+import 'package:chat_nest_app/chat_page.dart';
 import 'package:chat_nest_app/core/theme.dart';
 import 'package:chat_nest_app/message_page.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'ChatNest App',
       theme: AppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
-      home: MessagePage(),
+      home: ChatPage(),
     );
   }
 }
