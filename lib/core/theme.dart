@@ -14,7 +14,7 @@ class DefaultColors {
   static const Color whiteText = Color(0xFFFFFFFF);
   static const Color senderMessage = Color(0xFF7A8194);
   static const Color receiverMessage = Color(0xFF373E4E);
-  static const Color sentMessageInput = Color(0xFFD34354);
+  static const Color sentMessageInput = Color.fromARGB(255, 62, 67, 84);
   static const Color messageListPage = Color(0xFF292F3F);
   static const Color buttonColor = Color(0xFF7A8194);
 }
