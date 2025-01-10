@@ -87,9 +87,9 @@ Dự án này sử dụng Clean Architecture và Bloc để quản lý trạng t
 ## ✅ Todo
 ### Chức Năng Ứng Dụng
 - [x] Cài đặt các gói cho Flutter
-- [ ] Xây dựng UI Trang cuộc trò chuyện - Flutter
-- [ ] Xây dựng UI Trang chat - Flutter
-- [ ] Xây dựng UI Trang đăng ký và đăng nhập - Flutter
+- [x] Xây dựng UI Trang cuộc trò chuyện - Flutter
+- [x] Xây dựng UI Trang chat - Flutter
+- [x] Xây dựng UI Trang đăng ký và đăng nhập - Flutter
 - [ ] Khởi tạo backend - Node.js/TypeScript
 - [ ] Đăng ký và đăng nhập với PostgreSQL - Node.js/TypeScript
 - [ ] Đăng ký và đăng nhập API với Flutter
