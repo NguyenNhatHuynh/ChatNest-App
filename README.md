@@ -113,3 +113,5 @@ Dự án này sử dụng Clean Architecture và Bloc để quản lý trạng t
 
 ## Tác giả 👨‍💻
 Tôi sẽ rất cảm kích nếu bạn có thể cho kho lưu trữ này một ngôi sao 🌟. Nó sẽ giúp những người khác khám phá ra điều này. Cảm ơn vì sự hỗ trợ của bạn [Xoan Dev]👨‍💻
+
+- [ ] Status : In Progress
